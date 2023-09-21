@@ -63,7 +63,7 @@ extension UILabel {
 
 extension NSAttributedString {
 
-    static func create(
+    public static func create(
         from string: String?,
         font: UIFont,
         color: UIColor,
@@ -90,7 +90,7 @@ extension NSAttributedString {
         return NSMutableAttributedString(string: string ?? "", attributes: attributes)
     }
     
-    static func attributes(
+    public static func attributes(
         font: UIFont,
         color: UIColor,
         lineSpacing: CGFloat = 0,
